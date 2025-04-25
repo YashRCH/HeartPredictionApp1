@@ -1,0 +1,8 @@
+<resources>
+
+
+    <color name="high_risk">#D32F2F</color>
+    <color name="high_risk_bg">#FFCDD2</color>
+    <color name="low_risk">#388E3C</color>
+    <color name="low_risk_bg">#C8E6C9</color>
+</resources>
