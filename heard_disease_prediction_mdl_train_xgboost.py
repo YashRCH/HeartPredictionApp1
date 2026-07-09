@@ -172,6 +172,19 @@ with open("xgb_heart_model.onnx", "wb") as f:
 
 print("✅ XGBoost model successfully converted to ONNX format!")
 
+# Export scaler params for on-device (Android) scaling — full precision, correct feature order.
+# The Android app loads this JSON so it standardizes inputs identically to training.
+import json
+scaler_params = {
+    "features": features,  # ["cp", "thalach", "sex", "age"] — must match the model's input order
+    "mean": scaler.mean_.tolist(),
+    "scale": scaler.scale_.tolist(),
+}
+with open("scaler_params.json", "w") as f:
+    json.dump(scaler_params, f, indent=2)
+print("Saved scaler_params.json")
+
 from google.colab import files
 files.download("xgb_heart_model.onnx")
 files.download("scaler.pkl")
+files.download("scaler_params.json")

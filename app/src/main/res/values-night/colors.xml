@@ -1,0 +1,25 @@
+<resources>
+    <!-- Dark Material 3 palette -->
+    <color name="md_primary">#FFB2B8</color>
+    <color name="md_on_primary">#611420</color>
+    <color name="md_primary_container">#8B2A36</color>
+    <color name="md_on_primary_container">#FFDADC</color>
+    <color name="md_secondary">#E6BDBD</color>
+    <color name="md_on_secondary">#442A2A</color>
+    <color name="md_background">#131316</color>
+    <color name="md_on_background">#E3E2E6</color>
+    <color name="md_surface">#131316</color>
+    <color name="md_on_surface">#E3E2E6</color>
+    <color name="md_surface_variant">#1F2023</color>
+    <color name="md_on_surface_variant">#C4C7CE</color>
+    <color name="md_outline">#8E9196</color>
+    <color name="md_outline_variant">#44474B</color>
+    <color name="md_error">#FFB4AB</color>
+    <color name="md_on_error">#690005</color>
+
+    <!-- Semantic risk colors (dark) -->
+    <color name="risk_high">#FFB2B8</color>
+    <color name="risk_high_bg">#4A1D22</color>
+    <color name="risk_low">#7EE0AB</color>
+    <color name="risk_low_bg">#123726</color>
+</resources>

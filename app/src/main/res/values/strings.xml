@@ -1,7 +1,21 @@
 <resources>
-    <string name="app_name">HeartPredictionApp</string>
+    <string name="app_name">Heart Risk Check</string>
 
-    <!-- Chest pain types -->
+    <!-- Header -->
+    <string name="eyebrow">On-device screening</string>
+    <string name="screen_title">Heart Risk Check</string>
+    <string name="screen_subtitle">A quick, private estimate from four simple inputs. Nothing leaves your device.</string>
+
+    <!-- Inputs -->
+    <string name="hint_age">Age</string>
+    <string name="hint_thalach">Max heart rate</string>
+    <string name="helper_thalach">Highest heart rate reached during exertion (60–220 bpm)</string>
+    <string name="label_gender">Sex</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="hint_cp">Chest pain type</string>
+
+    <!-- Chest pain types (value - label; the leading code is parsed by the model) -->
     <string-array name="chest_pain_types">
         <item>0 - Typical angina</item>
         <item>1 - Atypical angina</item>
@@ -9,11 +23,20 @@
         <item>3 - Asymptomatic</item>
     </string-array>
 
-    <!-- Add these to fix the errors -->
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
-    <string name="action_settings">Settings</string>
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <!-- Actions & results -->
+    <string name="predict_button">Estimate risk</string>
+    <string name="result_placeholder">Your result will appear here</string>
+    <string name="risk_high_label">Elevated risk</string>
+    <string name="risk_low_label">Lower risk</string>
+    <string name="risk_high_reco">This screening suggests elevated risk. Consider discussing these results with a healthcare professional.</string>
+    <string name="risk_low_reco">This screening suggests lower risk. Keep up healthy habits — this is an estimate, not a diagnosis.</string>
+    <string name="disclaimer">For educational use only. This is not a medical device and not a substitute for professional diagnosis.</string>
+
+    <!-- Errors -->
+    <string name="error_fill_fields">Please fill in all fields</string>
+    <string name="error_age_range">Enter a valid age (20–100)</string>
+    <string name="error_hr_range">Enter a valid heart rate (60–220)</string>
+    <string name="error_number_format">Invalid number format</string>
+    <string name="error_model_load">Couldn\'t load the model. Please reopen the app.</string>
+    <string name="error_prediction">Prediction error: %1$s</string>
 </resources>

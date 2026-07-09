@@ -1,8 +1,25 @@
 <resources>
+    <!-- Light Material 3 palette -->
+    <color name="md_primary">#B42B3B</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#FFDADC</color>
+    <color name="md_on_primary_container">#40000A</color>
+    <color name="md_secondary">#775656</color>
+    <color name="md_on_secondary">#FFFFFF</color>
+    <color name="md_background">#FBF8F8</color>
+    <color name="md_on_background">#1A1C1E</color>
+    <color name="md_surface">#FBF8F8</color>
+    <color name="md_on_surface">#1A1C1E</color>
+    <color name="md_surface_variant">#ECEEF1</color>
+    <color name="md_on_surface_variant">#44474B</color>
+    <color name="md_outline">#74777C</color>
+    <color name="md_outline_variant">#C4C7CE</color>
+    <color name="md_error">#BA1A1A</color>
+    <color name="md_on_error">#FFFFFF</color>
 
-
-    <color name="high_risk">#D32F2F</color>
-    <color name="high_risk_bg">#FFCDD2</color>
-    <color name="low_risk">#388E3C</color>
-    <color name="low_risk_bg">#C8E6C9</color>
+    <!-- Semantic risk colors (light) -->
+    <color name="risk_high">#C0263A</color>
+    <color name="risk_high_bg">#FFE1E4</color>
+    <color name="risk_low">#1F7A4D</color>
+    <color name="risk_low_bg">#D9F3E4</color>
 </resources>
