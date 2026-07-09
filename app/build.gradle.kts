@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.android.application)
-    // …any other plugins…
 }
 
 android {
@@ -8,7 +7,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.heartpredictionapp"
+        applicationId = "com.yashrichhariya.heartriskcheck"
         minSdk = 29
         targetSdk = 35
         versionCode = 1
@@ -39,12 +38,9 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
-    implementation(libs.navigation.fragment)
-    implementation(libs.navigation.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
-    // ── ADD THIS LINE ──
     implementation("com.microsoft.onnxruntime:onnxruntime-android:1.17.0")
 }
